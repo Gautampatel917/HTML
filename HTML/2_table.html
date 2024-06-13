@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table example</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+        }
+
+        tr:nth-child(even){
+            background-color : lightblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- must see semantic element : aside, article, nav, footer, detail, section... so on -->
+
+    <!-- colspan example -->6
+    <table style="width: 400px;">
+        <caption>colspan example</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Gautam</td>
+            <td>Malaviya</td>
+            <td>18</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- rowspan example -->
+    <table style="width: 400px;">
+        <caption>rowspan example</caption>
+        <tr>
+            <th>Name</th>
+            <td>Gautam malaviya</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone number</th>
+            <td>20003481043</td>
+        </tr>
+        <tr>
+            <td>29294810239</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is image tag example</title>
+</head>
+<body>
+    <img src="imageExample.jpg" alt="laptop image" usemap="#workMap" style="height: 500px; width: 600px;">
+    <map name="workMap">
+        <area shape="rect" coords="220,115,480,410" href="http://www.google.com/" target="_blank" title="Go to Google!">
+        <!-- first two starting x and y ,
+            second is end box also x any y -->
+    </map>
+            <!--x means width and y means hight -->
+                
+            <!-- <img src="" alt="" srcset=""> -->
+            <!-- The srcset attribute specifies the URL of the image to use in different situations.
+                            
+            This attribute is required when
+            <source> is used in <picture>. -->
+    <picture>
+        <source media="(min-width: 300px)" srcset="spiderMen.jpg" sizes="300px">
+    </picture>
+
+</body>
+</html>

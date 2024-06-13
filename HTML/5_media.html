@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <!-- CSS only -->
+    <style>
+        body {
+            background-color: rgb(200, 0, 244);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        video {
+            height: 280px;
+            width: 500px;
+            border: 2px solid black;
+            box-shadow: 2px 7px 5px 2px blueviolet;
+        }
+
+        iframe{
+            height:  360px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <video controls autoplay loop muted><!--chrome only support autoplay if video is mute-->
+        <source src="DemoVideo.mp4">
+    </video>
+
+    <audio controls hidden autoplay loop>
+        <source src="DemoAudio.mp3">
+    </audio>
+
+    <!-- <iframe src="https://youtu.be/_NQGQImrpx4?si=jV-lozDVq72Mdogi?autoplay=1"></iframe> -->
+    <!-- autoplay=1 are make our video autoplayable on page load -->
+
+</body>
+
+</html>

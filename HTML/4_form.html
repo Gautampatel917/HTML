@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+
+        #Ltable{
+            background-color: skyblue;
+            height: 200px;
+            width:  350px;
+            margin: auto;
+            top: 70px;
+            position: relative;
+            font-size: large;
+            font-weight: 600;
+            font-family: 'Courier New', Courier, monospace;
+           box-shadow: 10px 5px 5px 3px rgb(20, 26, 122);
+        }
+
+        table:td{
+            font-weight: bolder;
+        }
+
+        #submit{
+            background-color: lightblue;
+            margin: 4px;
+            border-radius: 14px;
+            height: 30px;
+            font-size: 89%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table id="Ltable">
+        <form action="">
+            <tr>
+                <th colspan="2" rowspan="2">Login form</th>
+                <tr></tr>
+            </tr>
+            <tr>
+                <td><label for="uname" name="uname">username:</label></td>
+                <td><input type="textbox" name="uname" placeholder="username"></td>
+            </tr>
+            <tr>
+                <td><label for="pwd" name="pwd">password:</label></td>
+                <td><input type="password" name="pwd" placeholder="password"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><input type="submit" id="submit"></td>
+                <tr></tr>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
